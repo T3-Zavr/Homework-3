@@ -50,7 +50,7 @@ body {
 
 .header-menu {
     font-family: Montserrat-Regular;
-    width: 520px;
+    max-width: 520px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -217,10 +217,6 @@ h2 {
     align-items: center;
 }
 
-.pricing-header {
-
-}
-
 .pricing-elements {
     display: flex;
     justify-content: space-between;
@@ -229,7 +225,7 @@ h2 {
 }
 
 .pricing-column {
-    width: 210px;
+    max-width: 210px;
     padding: 36px 55px 10px 55px;
     background-color: #fff;
     border-radius: 5px;
@@ -337,3 +333,32 @@ a {
     z-index: 4;
   }
   
+  @media screen and (max-width: 1250px) {
+
+    .pricing-elements {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .header-menu {
+    display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+.pricing-elements {
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+}
+.our-story-box {
+    flex-direction: column;
+    padding: 35px 10px;
+    justify-content: space-between;
+}
+.our-story-button {
+    margin: 30px 0px;
+}
+
+}
